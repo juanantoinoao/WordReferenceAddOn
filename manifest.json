@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "WordReference",
+  "version": "1.0",
+
+  "description": "Busca la palabra seleccionada en WordReference",
+  
+  "icons": {
+    "48": "icons/icono.png"
+  },
+
+  "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+		"tabs"
+]
+
+}
