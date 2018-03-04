@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Options</title>
+    <style>
+        .response {
+            min-height: 1.5rem;
+            color: #555;
+            transition-duration: .2s;
+        }
+        .row {
+            border-top: 1px solid #c1c1c1;
+            -moz-box-align: center;
+            min-height: 35px;
+            line-height: 35px;
+            text-shadow: 0 1px 1px #fefffe;
+        }
+        .row .title {
+            width: 264px;
+            display: inline-block;
+            cursor: default;
+            margin-top: 1px;
+            margin-bottom: 2px;
+            margin-inline-end: 5px;
+            font: message-box;
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+  </head>
+
+<body>
+  <div class="response"></div>
+    <div class="row">
+      <label class="title" for="wordreflangvector">Choose translation</label>
+      <select id="wordreflangvector">
+        <optgroup label="Spanish">
+          <option id="enes" value="enes" selected="selected">English-Spanish</option>
+          <option id="esen" value="esen">Spanish-English</option>
+          <option id="esfr" value="esfr">Spanish-French</option>
+          <option id="espt" value="espt">Spanish-Portuguese</option>
+          <option id="esit" value="esit">Spanish-Italian</option>
+          <option id="esde" value="esde">Spanish-German</option>
+          <option id="eses" value="eses">Spanish: definition</option>
+          <option id="essin" value="essin">Spanish: synonyms</option>
+          <option id="esconj" value="esconj">Spanish: conjugations</option>
+        </optgroup>
+        <optgroup label="French">
+          <option id="enfr" value="enfr">English-French</option>
+          <option id="fren" value="fren">French-English</option>
+          <option id="fres" value="fres">French-Spanish</option>
+          <option id="frconj" value="frconj">French: conjugations</option>
+        </optgroup>
+        <optgroup label="Italian">
+          <option id="enit" value="enit">English-Italian</option>
+          <option id="iten" value="iten">Italian-English</option>
+          <option id="ites" value="ites">Italian-Spanish</option>
+          <option id="itit" value="itit">Italian definition</option>
+          <option id="itconj" value="itconj">Italian: conjugations</option>
+        </optgroup>
+        <optgroup label="Catalan">
+          <option id="caca" value="caca">Català: definició</option>
+        </optgroup>
+        <optgroup label="German">
+          <option id="ende" value="ende">English-German</option>
+          <option id="deen" value="deen">German-English</option>
+          <option id="dees" value="dees">German-Spanish</option>
+        </optgroup>
+        <optgroup label="Dutch">
+          <option id="ennl" value="ennl">English-Dutch</option>
+          <option id="nlen" value="nlen">Dutch-English</option>
+        </optgroup>
+        <optgroup label="Swedish">
+          <option id="ensv" value="ensv">English-Swedish</option>
+          <option id="sven" value="sven">Swedish-English</option>
+        </optgroup>
+        <optgroup label="Russian">
+          <option id="enru" value="enru">English-Russian</option>
+          <option id="ruen" value="ruen">Russian-English</option>
+        </optgroup>
+        <optgroup label="Portuguese">
+          <option id="enpt" value="enpt">English-Portuguese</option>
+          <option id="pten" value="pten">Portuguese-English</option>
+          <option id="ptes" value="ptes">Portuguese-Spanish</option>
+        </optgroup>
+        <optgroup label="Polish">
+          <option id="enpl" value="enpl">English-Polish</option>
+          <option id="plen" value="plen">Polish-English</option>
+        </optgroup>
+        <optgroup label="Romanian">
+          <option id="enro" value="enro">English-Romanian</option>
+          <option id="roen" value="roen">Romanian-English</option>
+        </optgroup>
+        <optgroup label="Czech">
+          <option id="encz" value="encz">English-Czech</option>
+          <option id="czen" value="czen">Czech-English</option>
+        </optgroup>
+        <optgroup label="Greek">
+          <option id="engr" value="engr">English-Greek</option>
+          <option id="gren" value="gren">Greek-English</option>
+        </optgroup>
+        <optgroup label="Turkish">
+          <option id="entr" value="entr">English-Turkish</option>
+          <option id="tren" value="tren">Turkish-English</option>
+        </optgroup>
+        <optgroup label="Chinese">
+          <option id="enzh" value="enzh">English-Chinese</option>
+          <option id="zhen" value="zhen">Chinese-English</option>
+        </optgroup>
+        <optgroup label="Japanese">
+          <option id="enja" value="enja">English-Japanese</option>
+          <option id="jaen" value="jaen">Japanese-English</option>
+        </optgroup>
+        <optgroup label="Korean">
+          <option id="enko" value="enko">English-Korean</option>
+          <option id="koen" value="koen">Korean-English</option>
+        </optgroup>
+        <optgroup label="Arabic">
+          <option id="enar" value="enar">English-Arabic</option>
+          <option id="aren" value="aren">Arabic-English</option>
+        </optgroup>
+        <optgroup label="English monolingual">
+          <option id="enen" value="enen">English definition</option>
+          <option id="enthe" value="enthe">English synonyms</option>
+          <option id="enusg" value="enusg">English usage</option>
+          <option id="encol" value="encol">English collocations</option>
+        </optgroup>
+      </select>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
