@@ -55,20 +55,21 @@ var langmatrix = {
 };
 
 browser.contextMenus.create({
-	id: "wordreference",
-	title: "WordReference",
-	contexts: ["selection"],
-	onclick: openWR
+  id: "wordreference",
+  title: "WordReference",
+  contexts: ["selection"],
+  onclick: openWR
 });
 
 function openWR(info) {
-	var selection = info.selectionText;
-	selection = selection.replace(/\u00AD/g, '');
+  var selection = info.selectionText;
+  selection = selection.replace(/\u00AD/g, '');
+  var wordreflangvector = 'enes';
   browser.storage.local.get("wordreflangvector").then(item => {
-    var wordreflangvector = item.wordreflangvector;
-  	var link = 'https://www.wordreference.com/' + langmatrix[wordreflangvector] + selection;
-	  var creating = browser.tabs.create({
-		  url:link
-  	});
+    wordreflangvector = item.wordreflangvector;
+  });
+  var link = 'https://www.wordreference.com/' + langmatrix[wordreflangvector] + selection;
+  var creating = browser.tabs.create({
+    url:link
   });
 };
