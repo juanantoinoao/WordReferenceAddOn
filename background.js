@@ -71,4 +71,4 @@ function openWR(info) {
       url:link
     });
   });
-};
+}
