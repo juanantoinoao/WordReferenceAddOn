@@ -64,12 +64,11 @@ browser.contextMenus.create({
 function openWR(info) {
   var selection = info.selectionText;
   selection = selection.replace(/\u00AD/g, '');
-  var wordreflangvector = 'enes';
   browser.storage.local.get("wordreflangvector").then(item => {
-    wordreflangvector = item.wordreflangvector;
-  });
-  var link = 'https://www.wordreference.com/' + langmatrix[wordreflangvector] + selection;
-  var creating = browser.tabs.create({
-    url:link
+    var wordreflangvector = item.wordreflangvector || 'enes';
+    var link = 'https://www.wordreference.com/' + langmatrix[wordreflangvector] + selection;
+    var creating = browser.tabs.create({
+      url:link
+    });
   });
 };
